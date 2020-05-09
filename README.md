@@ -15,7 +15,7 @@ What is needed ?
 
 ## Step 1 - Create a new Jail
 
-Create a jail with the following parameters: Static IP, with a virtual vnet, my static Ip is 192.168.0.54
+Create a jail with the following parameters: Static IP, with a virtual vnet, my static Ip is 192.168.0.54, you can choose any static Ip that has no collision with the others of your network.
 
 ![jail creation 1](./doc/imgs/jail1.jpg)
 
@@ -149,7 +149,7 @@ To Install de aplication over the clonned repository run npm install
 
     npm install
 
-If all works well you can start parse server over express, check in the index.js file the initial parameters that you need like databaseUri, appId, masterKey, serverURL
+If all works well you can start parse server over express, check in the [index.js](index.js) file the initial parameters that you need like databaseUri, appId, masterKey, serverURL
 
     node index.js
 
@@ -165,7 +165,7 @@ Install with npm parse dashboard, in the same directory of the project run:
 
     npm install parse-dashboard
 
-In the index,js file modify it to use the middleware and put the data that fits your server, look the file in this repository with the parameters. 
+In the [index.js](index.js) file modify it to use the middleware and put the data that fits your server, look the file in this repository with the parameters. 
 
 Then you are ready to run again to check if the dashboard is running:
 
