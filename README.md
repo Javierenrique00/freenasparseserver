@@ -204,3 +204,19 @@ Then you need to enable service autostart. In the file /etc/rc.conf add the line
 ![service configuration](./doc/imgs/forever2.jpg)
 
 You are ready to check if the service stars after the server reboot.
+
+# Problem with Cloud code functions #
+When I have to run Cloud Code functions inside the standard setup, I found the following error:
+
+        unauthorized
+
+This error is shown int the Logs.
+
+The solution that I found was at the end of the Link: https://github.com/parse-community/parse-server/issues/356
+
+description:
+In the index.js of parse installation you need to put javascriptKey : 'unused'.
+
+![service configuration](./doc/imgs/error_aut.jpg)
+
+
